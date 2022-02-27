@@ -65,7 +65,7 @@
 .main-navigation__mobile-button {
     display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
     .main-navigation__logo-link {
         font-size: 20px;
         width: 40%;

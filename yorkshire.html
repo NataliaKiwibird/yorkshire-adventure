@@ -8,6 +8,8 @@
     <meta http-equiv = "content-language" content = "pl-PL">    
     <link rel="stylesheet" type="text/css" href="css/yorkshire-home.css">
     <link rel="stylesheet" type="text/css" href="css/yorkshire-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/yorkshire-contact.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
@@ -122,9 +124,37 @@
 
         <!-- CONTACT SECTION -->
 
-        <section class="contact" id='gallery'>
+            <section class="contact" id='gallery'>
+                <div class="contact-image"></div>
+                <form class="contact-form">
 
-        </section>
+                    <h3 class="contact-form__h3">Kontakt</h3>
+    
+                   <p class="contact-form__header">Zapraszamy do polubienia nas facebooku lub dołączenia do grupy Świadomi Życia w Yorkshire.
+                    Jeśli masz jakieś pytania, skontaktuj się przez Facebook, WhatsApp, telefonicznie lub mailowo.
+                    Chętnie z Tobą porozmawiamy i odpowiemy na wszystkie pytania.</p>
+    
+                    <div class="contact-form__links">
+                        <button class='contact-form__links-button'>Fanpage FB</button>
+                        <button class='contact-form__links-button'>Grupa FB</button>
+                        <button class='contact-form__links-button'>WhatsApp</button>
+                    </div>
+
+                    <div class="contact-form__fields">
+                      
+                            <input name="name" class="contact-form__field" placeholder="Imię i nazwisko" required>
+                            <input name="email" class="contact-form__field" type="email" placeholder="Adres e-mail" required>
+                     
+                    
+                            <textarea placeholder="Treść wiadomości" class="contact-form__field contact-form__field--full-row" name="content" required rows="7"></textarea>
+                        
+                    </div>
+                    <button class="contact-form__submit-button">Wyślij</button>
+                   </div> 
+                </form>
+            </section>
+
+    
 
 
     </div>
