@@ -1,0 +1,115 @@
+*, *::before, *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../yorkshire-photos/261044129_311042080870273_8948673725961367946_n.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.home-head{
+    padding-top: 40vh;
+}
+.home-header{
+color: white;
+text-align: center;
+font-weight: bold;
+font-style: italic;
+font-size: 4.5rem;
+letter-spacing: 2px;
+padding: .25em;
+}
+.home-subheader{
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.home-buttons{
+    width: fit-content;
+    margin: 1.5em auto;
+}
+.home-button{
+    padding: .76em 1em;
+    color: white;
+    margin: .5em;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.home-button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+@media (min-width: 900px){
+    .home-header{
+        font-size: 7rem;
+        letter-spacing: 3px;
+        padding: .1em;
+        }
+    .home-subheader{
+        font-size: 3rem;
+        }
+    .home-button{
+        padding: 1em 1.6em;
+        margin: .75em;
+        font-size: 1.3rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        letter-spacing: 2px;
+    }
+}
+.about, .spends, .gallery{
+    width: 100%;
+    height: 100vh;
+}
+.about{
+background-color: yellowgreen;
+}
+.spends{
+
+}
+.gallery{
+    background-color: tomato;
+}
