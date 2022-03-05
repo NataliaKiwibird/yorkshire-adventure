@@ -3,30 +3,28 @@
     top: 0;
     right: 0;
     left: 0;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;;
-    color: white;
+    justify-content: space-between; */
+    width: 40%;;
+    color: #333;
     padding: 2em;
     z-index: 1;
+    background-color: white;
+
 }
 .main-navigation__inner {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 .main-navigation__logo-link {
     color: #333;
     width: fit-content;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 3em;
+    font-weight: 800;
     display: flex;
     align-items: center;
-    background-color: white;
 }
 .main-navigation__logo-image {
     width: 70px;
@@ -35,29 +33,31 @@
 .main-navigation__menu {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     font-weight: 200;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 0 1em;
     padding: 0;
     transition: 0.5s;
     transition-property: opacity;
 }
 .main-navigation__menu-item {
+    width: fit-content;
     text-decoration: none;
-    color: white;
-    margin-left: 3vw;
-    text-transform: uppercase;
+    color: #333;
+    margin-left: 1vw;
+    text-transform: capitalize;
     list-style: none;
     font-weight: bold;
-    padding: .2em 0;
+    padding: .2em;
 }
 .main-navigation__menu-item:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #333;
     }
 .main-navigation__link {
     text-decoration: none;
-    color: white;
+    color: #333;
 }
 .main-navigation__social-icon {
     width: 1.65em;
@@ -66,9 +66,19 @@
     display: none;
 }
 @media (max-width: 1025px) {
+    .main-navigation{
+        width: 100%;
+    }
+    .main-navigation__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navigation__logo{
+        width: 50%;
+    }
     .main-navigation__logo-link {
+        width: 100%;
         font-size: 20px;
-        width: 40%;
     }
     .main-navigation__logo-image {
         width: 50px;
@@ -80,7 +90,7 @@
         right: 0px;
         left: 0px;
         bottom: 0px;
-        background: black;
+        background: white;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -104,6 +114,7 @@
         font-size: 22px;
     }
     .main-navigation__mobile-button {
+        width: fit-content;
         display: unset;
         background: none;
         border: none;
@@ -111,6 +122,8 @@
     }
     .main-navigation__mobile-button-image {
         width: 2.5em;
+        height: 3em;
+        margin: 0 1.5em;
         display: block;
     }
 }
