@@ -1,0 +1,98 @@
+.testimonials{
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url('../yorkshire-photos/271887457_343610357613445_7815970311402534986_n.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.testimonials::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}.testimonials-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10em 0 18em 0;
+}
+.testimonials-inner__h3{
+    color: #eee;
+    margin: 1em auto;
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+.testimonials-inner__header{
+    color: #eee;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+    padding: 0 2em 2em 2em;
+}
+.testimonials-inner__card:first-of-type{
+    display: block;
+    }
+.testimonials-inner__card{
+    display: none;
+    background-color: #eee;
+    border-radius: 5px;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}
+.testimonials-inner__card-text{
+    text-align: justify;
+    color: #333;
+    padding: 3em 3em 1.5em 3em;
+    font-size: 1.5em;
+    line-height: 1.5;  
+}
+.testimonials-inner__card-text::before{
+    content: url('../yorkshire-icons/icons8-quote-left-50.png');
+    display: block;
+    float: left;
+    padding: 0 1.5em 0 0;
+}
+.testimonials-inner__card-text::after{
+    content: url('../yorkshire-icons/icons8-get-quote-50.png');
+    display: block;
+    clear: left;
+    float: right;
+    padding: 1.5em 0 1.5em 1.5em;
+}
+.testimonials-inner__card-author{
+    clear: both;
+    text-align: right;
+    padding: 0 3em 4em 0;
+    font-size: 1.5em;
+    color: #666;
+}
+.testimonials-inner__card-author span{
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 2px;
+}
+@media (min-width: 1000px){
+    .testimonials-inner__cards-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonials-inner__card{
+        display: block;
+        width: 35%;
+        height: 100%;
+        margin: 3em;
+    }
+}

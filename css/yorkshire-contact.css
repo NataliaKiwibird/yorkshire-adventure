@@ -62,7 +62,6 @@ background-color: yellowgreen;
     color: #333;
     line-height: 1.5;
     font-size: 1.75em;
-    /* margin-bottom: 3em; */
 }
 .contact-form__fields {
     display: flex;
