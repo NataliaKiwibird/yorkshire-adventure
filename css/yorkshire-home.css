@@ -26,28 +26,16 @@ body{
 .home{
     width: 100%;
     height: 100vh;
-    background-image: url('../yorkshire-photos/261044129_311042080870273_8948673725961367946_n.jpeg');
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+}
+.home-content{
     position: relative;
     z-index: 0;
-}
-.home::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.7);
-    z-index: -1;
 }
 .home-head{
     padding-top: 40vh;
 }
 .home-header{
-color: white;
+color: #333;
 text-align: center;
 font-weight: bold;
 font-style: italic;
@@ -56,7 +44,7 @@ letter-spacing: 2px;
 padding: .25em;
 }
 .home-subheader{
-    color: white;
+    color: #333;
     text-transform: uppercase;
     font-weight: lighter;
     text-align: center;
@@ -82,7 +70,35 @@ padding: .25em;
     transition: 0.3s;
     transition-property: background-color;
 }
+.home-content::after{
+    content: '';
+    position: absolute;
+    background-image: url(../yorkshire-illustrations/kingdom-leaves-11.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: 60%;
+    height: 75%;
+    top: 60%;
+    left: 40%;
+    z-index: -1;
+}
+.home-image{
+    display: none;
+}
 @media (min-width: 900px){
+    .home{
+        display: flex;
+    }
+    .home-content{
+        width: 40%;
+    }
+    .home-content::after{
+        top: 30%;
+        width: 60%;
+        height: 60%;
+    }
     .home-header{
         font-size: 7rem;
         letter-spacing: 3px;
@@ -98,6 +114,15 @@ padding: .25em;
         border: 1px solid white;
         border-radius: 5px;
         letter-spacing: 2px;
+    }
+    .home-image{
+        display: unset;
+        width: 60%;
+        background-image: url('../yorkshire-photos/165823151_163611695613313_5391891228653163060_n.jpeg');
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 .about, .spends, .gallery{
@@ -117,9 +142,3 @@ background-color: #ee82ee;
 /* DFB2F4 mauve */
 /* 355834 hunter green */
 /* 496DDB royal blue light */
-/* 3581B8 steel blue */
-/* F9A620 bright yellow crayola */
-/* FFFCFF snow */
-/* EF2D56 red crayola */
-/* D81E5B ruby  */
-/* 966B9D french lilac */
