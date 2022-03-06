@@ -6,7 +6,7 @@
     padding: 0;
 }
 :root{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -38,8 +38,7 @@ body{
 .home-header{
 color: #333;
 text-align: center;
-font-weight: bold;
-font-style: italic;
+font-family: 'Playball', cursive;
 font-size: 4.5rem;
 letter-spacing: 2px;
 padding: .25em;
@@ -71,20 +70,6 @@ padding: .25em;
     border: 1px solid white;
     transition: 0.3s;
     transition-property: background-color;
-}
-.home-content::after{
-    content: '';
-    position: absolute;
-    background-image: url(../yorkshire-illustrations/kingdom-leaves-11.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: .5;
-    width: 50%;
-    height: 70%;
-    top: 60%;
-    left: 40%;
-    z-index: -1;
 }
 .home-image{
     display: none;
@@ -121,25 +106,18 @@ padding: .25em;
     .home-image{
         display: unset;
         width: 60%;
-        background-image: url('../yorkshire-photos/165823151_163611695613313_5391891228653163060_n.jpeg');
-        background-position: left center;
-        background-size: cover;
+        background-image: url('../yorkshire-photos/blob3.png');
+        background-position: center;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-attachment: fixed;
     }
 }
-.about, .spends, .gallery{
+h3{
+    font-family: 'Playball', cursive;
+}
+.spends, .gallery{
     width: 100%;
     height: 100vh;
-}
-.about{
-background-color: #ee82ee;
-}
-.spends{
-
-}
-.gallery{
-    background-color: #ff6347;
 }
 /* #9EBD6E olivine */
 /* DFB2F4 mauve */
