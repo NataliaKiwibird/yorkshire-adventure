@@ -1,14 +1,11 @@
 .testimonials{
     min-height: 100vh;
     height: fit-content;
-    background-image: url('../yorkshire-photos/271887457_343610357613445_7815970311402534986_n.jpeg');
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+
     position: relative;
     z-index: 0;
 }
-.testimonials::after {
+/* .testimonials::after {
     content: "";
     position: absolute;
     left: 0;
@@ -17,7 +14,8 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.7);
     z-index: -1;
-}.testimonials-inner{
+} */
+.testimonials-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +23,7 @@
     padding: 10em 0 18em 0;
 }
 .testimonials-inner__h3{
-    color: #eee;
+    color: #333;
     margin: 1em auto;
     font-size: 3.5em;
     text-align: center;
@@ -33,47 +31,49 @@
     font-style: italic;
 }
 .testimonials-inner__header{
-    color: #eee;
+    color: #333;
     text-align: center;
     letter-spacing: 1px;
     font-size: 2em;
     padding: 0 2em 2em 2em;
+}
+.testimonials-inner__cards-wrapper{
+    width: 40%;
 }
 .testimonials-inner__card:first-of-type{
     display: block;
     }
 .testimonials-inner__card{
     display: none;
-    background-color: #eee;
-    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
     height: 80%;
     width: 90%;
     margin: auto;
+    border: 2px solid var(--primary-blue);
 }
 .testimonials-inner__card-text{
     text-align: justify;
     color: #333;
-    padding: 3em 3em 1.5em 3em;
-    font-size: 1.5em;
+    padding: 1.5em 1em 1em 1em;
+    font-size: 1.75em;
     line-height: 1.5;  
 }
 .testimonials-inner__card-text::before{
     content: url('../yorkshire-icons/icons8-quote-left-50.png');
     display: block;
-    float: left;
-    padding: 0 1.5em 0 0;
+    padding: 0 0 .8em 0;
 }
 .testimonials-inner__card-text::after{
     content: url('../yorkshire-icons/icons8-get-quote-50.png');
     display: block;
-    clear: left;
     float: right;
     padding: 1.5em 0 1.5em 1.5em;
 }
 .testimonials-inner__card-author{
-    clear: both;
+    clear: right;
     text-align: right;
-    padding: 0 3em 4em 0;
+    padding: 0 3em 3em 0;
     font-size: 1.5em;
     color: #666;
 }
@@ -83,16 +83,42 @@
     color: #333;
     letter-spacing: 2px;
 }
+.testimonials-image{
+    /* display: none; */
+    /* width: 60%; */
+    width: 60%;
+    height: 55%;
+    margin-top: 8.5vh;
+    background-image: url('../yorkshire-photos/blob8.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media (min-width: 1000px){
+    .testimonials{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     .testimonials-inner__cards-wrapper{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
     .testimonials-inner__card{
         display: block;
         width: 35%;
         height: 100%;
         margin: 3em;
+    }
+    .testimonials-inner__card-text{
+        text-align: justify;
+        padding: 3em 1em 1.5em 1em;
+        font-size: 1.75em;
+    }
+    .testimonials-image{
+        height: 75%;
+        width: 60%;
     }
 }

@@ -19,21 +19,26 @@ body{
     margin: 0;
     padding: 0;
     --primary-blue: #496DDB;
+    --primary-font: 'Source Sans Pro', sans-serif;;
+    --secondary-font: 'Playball', cursive;
 }
 .container{
     width: 100%;
     height: 100%;
 }
 .home{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     width: 100%;
     height: 100vh;
 }
 .home-content{
-    position: relative;
-    z-index: 0;
+    /* position: relative;
+    z-index: 0; */
 }
 .home-head{
-    padding-top: 40vh;
+    padding-top: 2vh;
 }
 .home-header{
 color: #333;
@@ -48,7 +53,7 @@ padding: .25em;
     text-transform: uppercase;
     font-weight: lighter;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2em;
     letter-spacing: 1px;
 }
 .home-buttons{
@@ -71,20 +76,41 @@ padding: .25em;
     transition: 0.3s;
     transition-property: background-color;
 }
+/* .home-content::after{
+    content: '';
+    position: absolute;
+    background-image: url(../yorkshire-illustrations/kingdom-leaves-11.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: 50%;
+    height: 70%;
+    top: 60%;
+    left: 40%;
+    z-index: -1;
+} */
 .home-image{
-    display: none;
+    /* display: none; */
+    /* width: 60%; */
+    width: 100%;
+    height: 55%;
+    margin-top: 8.5vh;
+    background-image: url('../yorkshire-photos/blob3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media (min-width: 900px){
     .home{
-        display: flex;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vh;
     }
     .home-content{
         width: 40%;
-    }
-    .home-content::after{
-        top: 30%;
-        width: 50%;
-        height: 60%;
     }
     .home-header{
         font-size: 6rem;
@@ -92,7 +118,7 @@ padding: .25em;
         padding: .1em;
         }
     .home-subheader{
-        font-size: 3rem;
+        font-size: 2.5em;
         font-weight: light;
         }
     .home-button{
@@ -103,23 +129,24 @@ padding: .25em;
         border-radius: 5px;
         letter-spacing: 2px;
     }
+    /* .home-content::after{
+        display: none;
+    } */
     .home-image{
-        display: unset;
+        margin-top: unset;
+        height: 80%;
         width: 60%;
-        background-image: url('../yorkshire-photos/blob3.png');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 }
 h3{
-    font-family: 'Playball', cursive;
+    font-family: var(--secondary-font);
 }
 .spends, .gallery{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
-/* #9EBD6E olivine */
-/* DFB2F4 mauve */
-/* 355834 hunter green */
-/* 496DDB royal blue light */
+@media (min-width: 1550px){
+    .home-image{
+        height: 90%;
+    }
+}
